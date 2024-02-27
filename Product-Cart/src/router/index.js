@@ -8,6 +8,8 @@ import Customers from '../Views/Customers.vue'
 import AllSalesPage from '../Views/AllSalesPage.vue'
 import AbandonedSales from '../Views/AbandonedSales.vue'
 import CartPage from '../Views/CartPage.vue'
+import CreateProductCheckout from '../Views/CreateProductCheckout.vue'
+import StoreFront from '../Views/StoreFront.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -56,6 +58,17 @@ const router = createRouter({
       path: '/cart',
       name: 'cart',
       component: CartPage
+    },
+    {
+      path: '/productcheckout',
+      name: 'productcheckout',
+      component: CreateProductCheckout
+    },
+
+    {
+      path: '/store',
+      name: 'store',
+      component: StoreFront
     }
   ]
 })
