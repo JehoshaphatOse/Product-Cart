@@ -211,13 +211,82 @@ import Logo from '../components/icons/Logo.vue'
       </div>
     </div>
   </div>
+
+  <!-- pop-up modal component -->
+  <div
+    class="px-[18rem] py-[8rem] h-full w-full bg-black/60 flex items-center justify-center absolute opacity-1 transition-all duration-300 top-0 bottom-0 left-0 right-0 z-50"
+  >
+    <div class="bg-white grid grid-cols-2 gap-2 rounded-md">
+      <div class="p-1 border border-white">
+        <img class="h-full" src="../assets/Frame.png" alt="" />
+      </div>
+      <div>
+        <div class="p-3">
+          <div class="flex items-center justify-between">
+            <h1 class="font-medium text-xl my-4">My new product</h1>
+            <div
+              class="flex items-center justify-center h-8 w-8 rounded-full bg-gray-50 cursor-pointer"
+            >
+              <div>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.4099 11.9999L17.7099 7.70994C17.8982 7.52164 18.004 7.26624 18.004 6.99994C18.004 6.73364 17.8982 6.47825 17.7099 6.28994C17.5216 6.10164 17.2662 5.99585 16.9999 5.99585C16.7336 5.99585 16.4782 6.10164 16.2899 6.28994L11.9999 10.5899L7.70994 6.28994C7.52164 6.10164 7.26624 5.99585 6.99994 5.99585C6.73364 5.99585 6.47824 6.10164 6.28994 6.28994C6.10164 6.47825 5.99585 6.73364 5.99585 6.99994C5.99585 7.26624 6.10164 7.52164 6.28994 7.70994L10.5899 11.9999L6.28994 16.2899C6.19621 16.3829 6.12182 16.4935 6.07105 16.6154C6.02028 16.7372 5.99414 16.8679 5.99414 16.9999C5.99414 17.132 6.02028 17.2627 6.07105 17.3845C6.12182 17.5064 6.19621 17.617 6.28994 17.7099C6.3829 17.8037 6.4935 17.8781 6.61536 17.9288C6.73722 17.9796 6.86793 18.0057 6.99994 18.0057C7.13195 18.0057 7.26266 17.9796 7.38452 17.9288C7.50638 17.8781 7.61698 17.8037 7.70994 17.7099L11.9999 13.4099L16.2899 17.7099C16.3829 17.8037 16.4935 17.8781 16.6154 17.9288C16.7372 17.9796 16.8679 18.0057 16.9999 18.0057C17.132 18.0057 17.2627 17.9796 17.3845 17.9288C17.5064 17.8781 17.617 17.8037 17.7099 17.7099C17.8037 17.617 17.8781 17.5064 17.9288 17.3845C17.9796 17.2627 18.0057 17.132 18.0057 16.9999C18.0057 16.8679 17.9796 16.7372 17.9288 16.6154C17.8781 16.4935 17.8037 16.3829 17.7099 16.2899L13.4099 11.9999Z"
+                    fill="gray"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2 mb-4">
+            <div class="bg-[#f9f5ff] w-6 h-6 rounded-full flex items-center justify-center">
+              <svg
+                width="16"
+                height="17"
+                viewBox="0 0 16 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.3333 14.5V13.1667C13.3333 12.4594 13.0524 11.7811 12.5523 11.281C12.0522 10.781 11.3739 10.5 10.6667 10.5H5.33332C4.62608 10.5 3.9478 10.781 3.4477 11.281C2.94761 11.7811 2.66666 12.4594 2.66666 13.1667V14.5M10.6667 5.16667C10.6667 6.63943 9.47275 7.83333 7.99999 7.83333C6.52723 7.83333 5.33332 6.63943 5.33332 5.16667C5.33332 3.69391 6.52723 2.5 7.99999 2.5C9.47275 2.5 10.6667 3.69391 10.6667 5.16667Z"
+                  stroke="#7F56D9"
+                  stroke-width="1.33333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <p class="text-sm">Olivia Rhye</p>
+          </div>
+          <h1 class="font-medium text-base">Product description</h1>
+          <div>
+            <p class="text-sm my-2">
+              Cryptodash Premium & High Quality with All Full Features of Crypto analytics.
+              Cryptodash comes with unique style and niche, you can easily edit and customize all
+              elements with design components which can speed up More details
+            </p>
+            <button>
+              <p class="text-sm text-purple-600">More details</p>
+            </button>
+          </div>
+        </div>
+
+        <div class="p-2">
+          <h1 class="font-medium text-sm my-2">Cost</h1>
+          <div>
+            <p class="font-semibold text-2xl">$25,000,000</p>
+            <button class="bg-[#6231ef] p-1 text-white text-base px-12 my-4 rounded-md">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
-<style scoped>
-/* .preview-container div {
-  display: none;
-}
-.preview-container:hover div {
-  display: block;
-  background-color: rgba(0, 0, 0, 0.5);
-} */
-</style>

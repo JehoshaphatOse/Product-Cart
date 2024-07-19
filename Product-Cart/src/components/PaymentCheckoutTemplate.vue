@@ -22,8 +22,8 @@
 
     <div class="px-4">
       <div class="text-center my-6">
-        <h1 class="font-semibold text-sm">Payment checkout template</h1>
-        <p class="text-xs py-3">
+        <h1 class="font-semibold text-base">Payment checkout template</h1>
+        <p class="text-sm py-3">
           Effortlessly accept online payments using our high-converting checkout templates. Sell
           products, services, subscriptions, memberships, and more with ease.
         </p>

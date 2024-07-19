@@ -3,7 +3,8 @@
   <div
     class="bg-white flex items-center justify-between border-b border-gray-300 text-sm p-3 px-6 fixed top-0 left-0 right-0"
   >
-    <div class="flex items-center gap-11">
+    <!-- left header -->
+    <div class="flex items-center gap-11 text-lg">
       <div class="flex gap-2 items-center">
         <div>
           <svg
@@ -30,11 +31,13 @@
         <h1 class="text-[#6231ef]">Create product checkout</h1>
       </div>
     </div>
-    <div class="flex gap-2">
-      <button class="flex items-center gap-2 text-sm border border-gray-300 p-1 px-2 rounded-md">
+
+    <!-- right header -->
+    <div class="flex gap-2 text-base">
+      <button class="flex items-center gap-2 border border-gray-300 p-1 px-2 rounded-md">
         Test payment
       </button>
-      <button class="flex items-center gap-2 bg-[#6231ef] p-1 px-2 rounded-md text-white text-sm">
+      <button class="flex items-center gap-2 bg-[#6231ef] p-1 px-2 rounded-md text-white">
         <svg
           width="17"
           height="16"
@@ -119,7 +122,8 @@
           <textarea
             class="w-full h-[100px] p-1 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-[#6231ef] mt-2"
             type="text"
-          />
+          >
+          </textarea>
         </div>
         <!-- product image -->
         <div>
